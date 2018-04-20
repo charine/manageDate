@@ -1,9 +1,9 @@
 <?php
 function  ConvertDateToThai($data_date,$style,$lang=''){ 
-	$year =  substr($data_date,0,4)  ;
-	$month =  substr($data_date,5,7)  ;
-	$day =  substr($data_date,8,11)  ;
-	$month =  substr($month,0,2)  ;
+	$year =  substr($data_date,0,4);
+	$month =  substr($data_date,5,7);
+	$day =  substr($data_date,8,11);
+	$month =  substr($month,0,2);
 	$month_cv = "";
 
 	if($lang=="en"){
@@ -91,14 +91,14 @@ function  ConvertDateToThai($data_date,$style,$lang=''){
 
 
 function DateDiff($strDate1,$strDate2){
-	return (strtotime($strDate2) - strtotime($strDate1))/  ( 60 * 60 * 24 );  // 1 day = 60*60*24
+	return (strtotime($strDate2) - strtotime($strDate1))/  ( 60 * 60 * 24 );  // 1 day
 }
 
 function TimeDiff($strTime1,$strTime2){
-	return (strtotime($strTime2) - strtotime($strTime1))/  ( 60 * 60 ); // 1 Hour =  60*60
+	return (strtotime($strTime2) - strtotime($strTime1))/  ( 60 * 60 ); // 1 Hour
 }
 
 function DateTimeDiff($strDateTime1,$strDateTime2){
-	return (strtotime($strDateTime2) - strtotime($strDateTime1))/  ( 60 * 60 ); // 1 Hour =  60*60
+	return (strtotime($strDateTime2) - strtotime($strDateTime1))/  ( 60 * 60 ); // 1 Hour
 }
 ?> 
